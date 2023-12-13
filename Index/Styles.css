@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+*
+{
+    padding:0;
+    font-family: 'Concert One', sans-serif;
+}
+
+body {
+    background-image: url("./Images/bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+
+.error
+{
+    display: none;
+    width: 300px;
+    height: 100px;
+    background-color: aquamarine;
+    border-radius: 45px;
+}
+
+.error >p{
+    position: relative;
+    font-size: larger;
+    color: red;
+    text-align: center;
+}
+.hero
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    
+}
+
+.searchbar
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    justify-content:center;
+}
+
+.city
+{
+    min-width: 230px;
+    min-height: 50px;
+    border-radius:1rem;
+    margin-right: 3rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+.city::placeholder
+{
+    font-weight: 600;
+    font-size:16px;
+    text-align: center;
+}
+
+.searchbtn
+{
+    font-size: 20px;
+width: 80px;
+border-radius: 30px;
+}
+
+.info{
+    height:150px;
+}
+
+.main
+{
+    display: none;
+    flex-direction:column;
+    min-width:600px;
+    min-height:650px;
+    border-radius: 25px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(73, 230, 230, 0.4);
+}
+.info1
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.weather,.cityn
+{
+    font-size: 45px;
+}
+.temp
+{
+    font-weight: 700;
+    font-size: 65px;
+}
+
+.cityn{
+    font-size: 60px;
+    font-style:italic;
+}
+
+.in-info1{
+    padding-left:75px;
+}
+
+.info2
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 10%;
+    justify-content:space-around;
+}
+
+.wind,.hum,.per
+{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2rem;
+    flex: 1;
+}
+
+
+@media (max-width: 630px)
+{
+    .main{
+    min-width:400px;
+    min-height:450px;
+    }
+}

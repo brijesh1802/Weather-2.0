@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Styles.css" />
+  <script src="Index.js"></script>
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="hero">
+
+    <div class="searchbar">
+      <input type="text" class="city" placeholder="Search for a city..."  />
+      <input type="button" class="searchbtn" value="Search" onclick="weather()"/>
+    </div>
+ <div class="error">
+  <p>Error: City not found! Please try again with a valid city.</p>
+ </div>
+  <div class="main">
+
+    <div class="info">
+      <p class="cityn"></p>
+    </div>
+
+    <div class="info1">
+
+      <div class="in-info1">
+        <p class="weather"></p>
+        <p class="temp1"><span class="temp"></span>°C</p>
+      </div>
+
+      <div class="in-info">
+        <img  class="weatheri"  width="240" alt="cloudy" />
+      </div>
+
+    </div>
+
+    <div class="info2">
+      <div class="wind" style="flex:1;">
+        <img   src="./Images/wind.png" alt="Wind" width="80">
+        <p >Wind Speed</p>
+        <p ><span class="windinfo"></span> km/hr</p>
+      </div>
+      <div class="hum">
+        <img  src="./Images/wind.png" alt="Humdiity icon" width="80">
+        <p >Humidity</p>
+        <p >
+          <span class="huminfo"></span>%
+        </p>
+      </div>
+      <div class="per">
+        <img  src="./Images/Precipitation.png" alt="Pericipitation" width="80">
+        <p > Precipitation</p>
+        <p >
+          <span class="prepinfo"></span>%
+        </p >
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+</body>
+
+</html>
